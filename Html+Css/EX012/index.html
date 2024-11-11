@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está sendo hospedado no meu próprio servidor</p>
+    <video src="midia/ItachivsSasuke.mp4" controls width=" 400" poster="midia/thumb.jpg" autoplay loop></video>
+
+    <h1>A outra forma de adicionar vídeo</h1>
+    
+    <video controls width="400" poster="midia/thumb.jpg">
+        <source src="midia/ItachivsSasuke.mp4" type="video/mp4">
+        <p>seu navegador não tem suporte para vídeos em mp4, baixe o video <a href="midia/ItachivsSasuke.mp4" download="ItachiVsSasuke" type="video/mp4">aqui</a></p>
+        
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/q-OSPs1D4Ns?si=TFUIAwjUEYtbQkXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
