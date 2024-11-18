@@ -12,6 +12,15 @@
         table{
             border-collapse: collapse;
             width: 500px;
+            position: relative;
+        }
+
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th{
@@ -20,13 +29,31 @@
             padding: 10px;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(48, 48, 48);
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(48, 48, 48);
             color: white;
         }
 
         td.num{
             text-align: right;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: white;
+        }
+
+        tbody tr:hover{
+            background-color: rgb(174, 174, 174);
         }
     </style>
     <title>Tabelas</title>
@@ -45,9 +72,12 @@
             TR,TD,TH-->
 
     <table>
+
+        <caption>População das Unidades Federativas</caption>
+        
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
 
 
@@ -194,11 +224,26 @@
 
         <tfoot>
             <tr>
-                <td>Total</td>
+                <td scope="row">Total</td>
                 <td class="num">212.583.720</td>
             </tr>
         </tfoot>
 
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vel dolore. Velit est, quas labore vitae, ratione corrupti voluptas excepturi eveniet rem autem nulla molestias officiis a dolor, consequuntur quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam molestias sunt vero voluptate beatae consequuntur laborum est quidem nostrum eligendi asperiores unde ducimus porro cum commodi, a enim eveniet.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa dolore architecto. Officia distinctio, repudiandae unde dolore vel, porro voluptatibus facilis ex natus excepturi voluptate expedita, animi iure eligendi? Magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ullam aliquid perferendis odit harum nulla delectus molestiae vero nostrum cumque, accusantium asperiores eos possimus facere dolore, doloribus sunt? Natus, consectetur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vel dolore. Velit est, quas labore vitae, ratione corrupti voluptas excepturi eveniet rem autem nulla molestias officiis a dolor, consequuntur quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam molestias sunt vero voluptate beatae consequuntur laborum est quidem nostrum eligendi asperiores unde ducimus porro cum commodi, a enim eveniet.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa dolore architecto. Officia distinctio, repudiandae unde dolore vel, porro voluptatibus facilis ex natus excepturi voluptate expedita, animi iure eligendi? Magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ullam aliquid perferendis odit harum nulla delectus molestiae vero nostrum cumque, accusantium asperiores eos possimus facere dolore, doloribus sunt? Natus, consectetur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vel dolore. Velit est, quas labore vitae, ratione corrupti voluptas excepturi eveniet rem autem nulla molestias officiis a dolor, consequuntur quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam molestias sunt vero voluptate beatae consequuntur laborum est quidem nostrum eligendi asperiores unde ducimus porro cum commodi, a enim eveniet.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa dolore architecto. Officia distinctio, repudiandae unde dolore vel, porro voluptatibus facilis ex natus excepturi voluptate expedita, animi iure eligendi? Magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ullam aliquid perferendis odit harum nulla delectus molestiae vero nostrum cumque, accusantium asperiores eos possimus facere dolore, doloribus sunt? Natus, consectetur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vel dolore. Velit est, quas labore vitae, ratione corrupti voluptas excepturi eveniet rem autem nulla molestias officiis a dolor, consequuntur quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam molestias sunt vero voluptate beatae consequuntur laborum est quidem nostrum eligendi asperiores unde ducimus porro cum commodi, a enim eveniet.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa dolore architecto. Officia distinctio, repudiandae unde dolore vel, porro voluptatibus facilis ex natus excepturi voluptate expedita, animi iure eligendi? Magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ullam aliquid perferendis odit harum nulla delectus molestiae vero nostrum cumque, accusantium asperiores eos possimus facere dolore, doloribus sunt? Natus, consectetur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vel dolore. Velit est, quas labore vitae, ratione corrupti voluptas excepturi eveniet rem autem nulla molestias officiis a dolor, consequuntur quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam molestias sunt vero voluptate beatae consequuntur laborum est quidem nostrum eligendi asperiores unde ducimus porro cum commodi, a enim eveniet.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa dolore architecto. Officia distinctio, repudiandae unde dolore vel, porro voluptatibus facilis ex natus excepturi voluptate expedita, animi iure eligendi? Magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ullam aliquid perferendis odit harum nulla delectus molestiae vero nostrum cumque, accusantium asperiores eos possimus facere dolore, doloribus sunt? Natus, consectetur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vel dolore. Velit est, quas labore vitae, ratione corrupti voluptas excepturi eveniet rem autem nulla molestias officiis a dolor, consequuntur quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam molestias sunt vero voluptate beatae consequuntur laborum est quidem nostrum eligendi asperiores unde ducimus porro cum commodi, a enim eveniet.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa dolore architecto. Officia distinctio, repudiandae unde dolore vel, porro voluptatibus facilis ex natus excepturi voluptate expedita, animi iure eligendi? Magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ullam aliquid perferendis odit harum nulla delectus molestiae vero nostrum cumque, accusantium asperiores eos possimus facere dolore, doloribus sunt? Natus, consectetur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, vel dolore. Velit est, quas labore vitae, ratione corrupti voluptas excepturi eveniet rem autem nulla molestias officiis a dolor, consequuntur quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam molestias sunt vero voluptate beatae consequuntur laborum est quidem nostrum eligendi asperiores unde ducimus porro cum commodi, a enim eveniet.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Non culpa dolore architecto. Officia distinctio, repudiandae unde dolore vel, porro voluptatibus facilis ex natus excepturi voluptate expedita, animi iure eligendi? Magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ullam aliquid perferendis odit harum nulla delectus molestiae vero nostrum cumque, accusantium asperiores eos possimus facere dolore, doloribus sunt? Natus, consectetur.</p>
+
 </body>
 </html>
